@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+.intro,
+.gallery {
+  margin-bottom: 2rem;
+}
+
+.images {
+  display: flex;
+  gap: 1rem;
+}
+
+.image {
+  background-color: #ccc;
+  padding: 2rem;
+  flex: 1;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+@media (max-width: 480px) {
+  .titulo {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    font-size: 1.3rem;
+  }
+  .intro {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .gallery {
+    text-align: center;
+  }
+  .images {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+  .images .image {
+    width: 180px;
+    background-color: beige;
+    border: 1px solid;
+    margin: 10px;
+  }
+  footer {
+    height: 50px;
+    padding: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .titulo{
+        text-align: center;
+        font-size: 2.4rem;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li{
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+    .intro {
+        text-align: center;
+        font-size: 1.4rem; 
+    }
+    .gallery {
+        text-align: center;
+        padding: 8px;
+        margin:5px
+    }
+    .images {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+    }
+    .image{
+        width: 100%;
+        margin: 18px;
+        border: 1px solid;
+        background-color: beige;
+    }
+}
+@media (min-width:769px) and (max-width:1400px){
+    .titulo{
+        text-align: center;
+        font-size: 3rem;
+}
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 12px;
+        font-size: 1.6rem;
+}
+    .intro {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .gallery {
+        text-align: center;
+        padding: 8px;
+        margin:5px
+    }
+}
